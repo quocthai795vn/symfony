@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Edit</title>
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-offset-2 col-md-5">
+			<form action="/student/edit" method="POST" role="form">
+			<input type="text" hidden="" name="id" value="{{student.id}}">
+			    <legend>Edit</legend>
+			    <div class="form-group">
+			        <label for="">Name</label>
+			        <input type="text" value="{{student.name}}" name="name" class="form-control" >
+			    </div>
+
+			    <div class="form-group">
+			        <label for="">Gender</label>
+			        <select name="gerder">
+			            <option>Nam</option>
+			            <option>Nu</option>
+			        </select>
+			    </div>
+
+			     <div class="form-group">
+			        <label for="">Birthday </label>
+			        <input type="text" value="{{student.birthday}}" name="birthday" class="form-control" id="">
+			    </div>
+
+			    <button type="submit" class="btn btn-primary">Add</button>
+			</form>
+		</div>
+	</div>
+</div>
+	
+</body>
+</html>
